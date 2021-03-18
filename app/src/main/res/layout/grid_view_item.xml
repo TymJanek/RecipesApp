@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="property"
+            type="com.example.recipesapp.network.Recipe" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="6dp"
+        tools:context=".DetailFragment">
+
+        <!-- id -->
+        <TextView
+            android:id="@+id/user_text"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:scaleType="centerCrop"
+            android:text="@{property.component1()}"
+            android:textSize="18sp"
+            />
+
+        <!-- title -->
+        <TextView
+            android:id="@+id/user_email"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:scaleType="centerCrop"
+            android:text="@{property.component2()}"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+
+
+</layout>
